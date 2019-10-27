@@ -1,0 +1,41 @@
+1. 
+Vanilla JS - 3/5
+jQuery - 2/5
+HTML/HTML5 - 5/5
+CSS/CSS3 - 4.5/5
+Ajax - 2/5
+AngularJS - 4.5/5
+Bootstrap - 3.5/5
+
+2. What is the width of a container with 100px of width and 5px of padding?
+
+Padding is the space occupied in between the content and border of a container(div). Padding may effect 
+the content-flow style inside the container but it doesn't effect the actual container-width.
+so, the width of a container is 100px. 
+
+3. How to apply a click event to all paragraphs except for the last?
+
+    *** javascript: Add same classname to all the paragraphs and exclude the last classname in the for loop
+
+        let nodes = document.getElementsByClassName('classname');
+        for(let i=0; i<(nodes.length-1); i++{
+            nodes[i].addEventListener("click", function() {
+                console.log("clicked");
+            });
+        }
+
+
+4. Why does the alert show "Jack" first and then undefined?
+
+    function identity() {
+      var name = 'Jack';
+      alert(name);
+      return
+      name
+    };
+    var who = identity(); // function called
+    alert(who)
+    
+    Because javascript is asynchronous. code executes in multiple threads.
+    on line 36, javascript calls identity() and then jumps to next line 37. It doesn't wait till the function
+    identity execution completes. So, on line 37 it tries to find 'who' value but fails. so, shows undefined.
