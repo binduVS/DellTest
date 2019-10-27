@@ -1,0 +1,124 @@
+.container{
+    height: 97vh;
+    width: 98.4vw;
+    background-color: #eaeae1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: sans-serif;
+}
+.upper-container {
+    height: 57%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.lower-container {
+    height: 40%;
+}
+    
+.icons-container {
+    height: 100%;
+    width: 55%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 47% 47%;
+    grid-template-rows: 47% 47%;
+}
+.icon-card {
+    border: 1px solid #eaeae1;
+    background-color: white;
+}
+
+.search-container {
+    height: 70%;
+    width: 43%;
+    border: 1px solid #eaeae1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.search-container .search-heading{
+    height: 45%;
+    width: 80%;
+    margin: 0 auto;
+}
+.search-container .search-bar {
+    height: 25%;
+    width: 80%;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between; */
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 60% 5% 35%;
+    margin: auto;
+}
+.search-container .search-option {
+    height: 25%;
+    width: 100%;
+    border-top: 1px solid #eaeae1;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.search-bar .search-box {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 80% 20%;
+}
+.search-box .search-text {
+    height: 75%;
+    width: 100%;
+}
+.search-text input {
+    padding: 2%;
+    width: 100%;
+    height: 100%;
+}
+.search-box .search-submit {
+    height: 75%;
+    width: 100%;
+}
+.search-submit img {
+    width: 100%;
+    height: 100%;
+}
+
+.search-bar #detect-box{
+    height: 70%;
+    width: 100%;
+    padding: 2%;
+    color: #0066cc;
+}
+.option-1 {
+    border-right: 1px solid #eaeae1;
+    width: 100%;
+    text-align: center;
+    height: inherit;
+    margin: auto;
+    color: #0066cc;
+}
+.option-2 {
+    width: 100%;
+    text-align: center;
+    color: #0066cc;
+    height: inherit;
+    margin: auto;
+}
+.lower-container {
+    height: 40%;
+    width: 100%;
+}
+.lower-cards {
+    height: 73%;
+    width: 100%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 50% 50%;
+}
+.card-left, .card-right {
+    border-left: 2px solid black;
+    background-color: white;
+}
